@@ -1,4 +1,4 @@
-# EndPoint
+# Badan Adhoc EndPoint
 [![Code Climate](https://codeclimate.com/github/pemiluAPI/badan-adhoc-endpoint.png)](https://codeclimate.com/github/pemiluAPI/badan-adhoc-endpoint)
 
 ## How to setup
