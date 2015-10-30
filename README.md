@@ -1,5 +1,5 @@
 # EndPoint
-[![Code Climate](https://codeclimate.com/github/pemiluAPI/endpoint.png)](https://codeclimate.com/github/pemiluAPI/endpoint)
+[![Code Climate](https://codeclimate.com/github/pemiluAPI/badan-adhoc-endpoint.png)](https://codeclimate.com/github/pemiluAPI/badan-adhoc-endpoint)
 
 ## How to setup
 1. `$ bundle install`
@@ -8,10 +8,10 @@
 3. `$ bundle exec rails server`
 
 ## Data
-[EndPoint](https://github.com/pemiluAPI/pemilu-data/tree/master/endpoint)
+[Badan Adhoc](https://github.com/pemiluAPI/pemilu-data/tree/master/badan-adhoc)
 
 ## Documentation API
-See [Documentation API](http://docs.endpoint.apiary.io/) for information on defining and using endpoint
+See [Documentation API](http://docs.badanadhoc.apiary.io/) for information on defining and using badan-adhoc-endpoint
 
 ## Resource
 [infopilkada.kpu.go.id](http://infopilkada.kpu.go.id/)
