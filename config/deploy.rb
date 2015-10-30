@@ -1,8 +1,8 @@
 # config valid only for Capistrano 3.1
 lock '3.2.1'
 
-set :application, 'endpoint'
-set :repo_url, 'git@github.com:pemiluAPI/endpoint.git'
+set :application, 'badan-adhoc-endpoint'
+set :repo_url, 'git@github.com:pemiluAPI/badan-adhoc-endpoint.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
