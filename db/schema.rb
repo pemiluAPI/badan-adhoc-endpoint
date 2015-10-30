@@ -11,10 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141028071438) do
+ActiveRecord::Schema.define(version: 20151030095003) do
 
-  create_table "provinces", force: true do |t|
-    t.string   "name"
+  create_table "adhocs", force: true do |t|
+    t.string   "jenis_wilayah"
+    t.string   "nama_wilayah"
+    t.float    "jumlah_ppk",    limit: 24
+    t.float    "jumlah_pps",    limit: 24
+    t.float    "jumlah_tps",    limit: 24
+    t.float    "jumlah_kpps",   limit: 24
     t.datetime "created_at"
     t.datetime "updated_at"
   end

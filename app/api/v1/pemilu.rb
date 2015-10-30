@@ -4,10 +4,20 @@ module Pemilu
     prefix 'api'
     format :json
 
-    resource :pemilu do
-      desc "Return list pemilu"
+    resource :jenis_wilayah do
+      desc "Return list jenis wilayah"
       get do
-        results = Pemilu.apiall(params)
+        results = Adhoc::JENISWILAYAH
+        {
+          results: results
+        }
+      end
+    end
+
+    resource :adhoc do
+      desc "Return list adhoc"
+      get do
+        results = Adhoc.apiall(params)
         {
           results: results
         }
