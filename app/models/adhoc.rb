@@ -6,9 +6,10 @@ class Adhoc < ActiveRecord::Base
 
   scope :by_id, lambda{ |id| where("id = ?", id) unless id.nil? }
   scope :by_jenis_wilayah, lambda{ |jenis_wilayah| where("jenis_wilayah = ?", jenis_wilayah) unless jenis_wilayah.nil? }
+  scope :by_nama_wilayah, lambda{ |nama_wilayah| where("nama_wilayah like ?", "%#{nama_wilayah}%") unless nama_wilayah.nil? }
 
   def self.apiall(data = {})
-    adhoc          = self.by_id(data[:id]).by_jenis_wilayah(data[:jenis_wilayah])
+    adhoc          = self.by_id(data[:id]).by_jenis_wilayah(data[:jenis_wilayah]).by_nama_wilayah(data[:nama_wilayah])
     paginate_adhoc = adhoc.limit(setlimit(data[:limit])).offset(data[:offset])
 
     return {
